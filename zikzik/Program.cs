@@ -1,11 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-<<<<<<< HEAD
-=======
-using System.Xml.Linq;
->>>>>>> f98cb7ba945ef4cd0350a01e4e84ff8793461b84
 using Newtonsoft.Json.Linq;
 
 namespace Zikzik
@@ -20,31 +15,20 @@ namespace Zikzik
 
             Console.ReadKey();
 
-<<<<<<< HEAD
-            await DisplayFiles(); 
+            await DisplayFiles();
 
-=======
->>>>>>> f98cb7ba945ef4cd0350a01e4e84ff8793461b84
             Console.WriteLine("\nНажмите любую клавишу для выхода...");
             Console.ReadKey();
         }
 
         private static async Task DisplayFiles()
-<<<<<<< HEAD
-        {          
-=======
         {
->>>>>>> f98cb7ba945ef4cd0350a01e4e84ff8793461b84
             if (isFirstKeyPress)
             {
                 isFirstKeyPress = false;
 
-                string token = "y0__xCdxbvDCBjUwzsgw_qGkBUwicWc-AfJ2tYeX4_nZruHkWr40ByOSDJr6A"; 
-<<<<<<< HEAD
+                string token = "y0__xCdxbvDCBjUwzsgw_qGkBUwicWc-AfJ2tYeX4_nZruHkWr40ByOSDJr6A";
                 string url = "https://cloud-api.yandex.net/v1/disk/resources/files";
-=======
-                string url = "https://cloud-api.yandex.net/v1/disk/";
->>>>>>> f98cb7ba945ef4cd0350a01e4e84ff8793461b84
 
                 using (HttpClient client = new HttpClient())
                 {
@@ -71,7 +55,3 @@ namespace Zikzik
         }
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> f98cb7ba945ef4cd0350a01e4e84ff8793461b84
